@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>Insurance</title>
+</head>
+<body>
+
+<h2>Premium Calculator</h2>
+
+<input id="d" placeholder="Distance"><br><br>
+<input id="del" placeholder="Deliveries"><br><br>
+<input id="s" placeholder="Safety"><br><br>
+
+<button onclick="cal()">Calculate</button>
+
+<h3 id="res"></h3>
+
+<script>
+function cal(){
+let d = document.getElementById("d").value;
+let del = document.getElementById("del").value;
+let s = document.getElementById("s").value;
+
+let p = 100 + (d*2) + (del*5) - (s*10);
+
+document.getElementById("res").innerText = "Premium: " + p;
+}
+</script>
+
+</body>
+</html>
